@@ -26,5 +26,3 @@ function fib(n)
     calcFib(2);
     return result;
 }
-
-console.log(fib(10));

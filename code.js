@@ -13,7 +13,7 @@ function fib(n)
 
     function calcFib(i)
     {
-        if (i >= n)
+        if (i >= n + 1)
         {
         return;
         }

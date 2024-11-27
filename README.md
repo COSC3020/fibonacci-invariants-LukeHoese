@@ -28,7 +28,7 @@ Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
 
-A good invariant for my recursive implementation of fib() is:
-At the start of the call fib(i), my result array contains the correct fibonacci values from 0 to i-1. 
+A good invariant for my recursive implementation of calcfib() is:
+At the start of the call calcfib(i), my result array contains the correct fibonacci values from 0 to i-1. 
 
-The base case, which sets us up for future calls, gets our result array set correctly to the known first two values, with any smaller base case fib calls handled prior to recursion. So we know that before the very first call to fib(i) for i > 2 that the elements from 0 to i-1 are guaranteed correct (which due to our base case includes i-2) and thus we can correctly calculate i (because i only needs i-1 and i-2 to be calculated). This invariant is good because it tells us that at the point of moving into a recursive call we know everything we need to to correctly calculate our next element, and guarantees its corectness up until we've processed the desired n elements. 
+The base case, which sets us up for future calls, gets our result array set correctly to the known first two values, with any smaller base case fib calls handled prior to recursion. So we know that before the very first recursive call to calcfib(i) that the elements from 0 to i-1 are guaranteed correct (which due to our base cases includes i-2) and thus we can correctly calculate i (because i only needs i-1 and i-2 to be calculated). This invariant is good because it tells us that at the point of moving into a recursive call we know everything we need to to correctly calculate our next element, and guarantees its corectness up until we've processed the desired n elements. 
